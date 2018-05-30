@@ -7,20 +7,21 @@ import {
 class Header extends Component {
   render() {
     return (
-      <header>
+      <header id="mainHeader">
 
         <div className="logo">
-          LOGO
-
+        Jordan Fred
         </div>
 
         <nav>
-          <ul>
+          <ul id="parent-list">
             <li className="first">
-              <Link to="/">Home</Link>
+              <div >
+                <Link to="/">About</Link>
+              </div>
             </li>
             <li>
-              <Link to="/ProjectsPage">Projects</Link>
+              <Link className="componentLink" to="/ProjectsPage">Projects</Link>
             </li>
             <li className="last">
               <Link to="/">Contact</Link>

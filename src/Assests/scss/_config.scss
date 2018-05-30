@@ -1,8 +1,23 @@
 
+/*
+color variables
+*/
+
 $black: #010000;
 $white: #ffffff;
 $lightGrey: #e6e6e6;
 $red: #ff1755;
+$backgroundBlue: #121C25;
+$foregroundBlue: #13314d;
+$titleFont: #9cb1bf;
+
+/*
+fonts
+*/
+@font-face {
+  font-family: subspace;
+  src: url(../media/fonts/Subspace.otf) format('opentype')
+}
 
 /*
 Mixins
@@ -25,9 +40,10 @@ Mixins
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  color: $black;
+  color: $white;
   font-weight: 400;
   font-style: normal;
+  background-color: $backgroundBlue;
 }
 
 a {

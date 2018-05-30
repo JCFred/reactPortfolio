@@ -1,18 +1,25 @@
 @import '_config.scss';
-
+@import 'stars.scss';
 
 header {
-  position: relative;
+  position: fixed;
   display: block;
   width: 100%;
   height: 90px;
-  background: $black;
+  min-height:90px;
   color: $white;
+  z-index: 7;
 
   .logo {
-    position: absolute;
-    top: 50%; left: 15px;
-    @include translateY(-50%);
+    margin-left: 10px;
+    margin-top: 15px;
+    width:500px;
+    height:100%;
+    display:flex;
+    align-items: center;
+    font-family: subspace;
+    font-size: 5em;
+    color: $titleFont;
   }
 
   nav,
@@ -43,4 +50,144 @@ header {
       }
     }
   }
+}
+
+body {
+  height: 5600px;
+}
+
+.mainContent {
+  z-index: 9;
+  height: 500px;
+  border: 1px solid $white;
+  border-radius: 15px;
+  background-color: #184169;
+  position:fixed;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.componentBody{
+  width:95vw;
+  height: 100%;
+
+
+  .componentHeader {
+    border: 1px solid red;
+    height: 10%;
+  }
+
+  .componentMain {
+    border: 1px solid red;
+    height:75%;
+  }
+
+  .componentFooter {
+    border: 1px solid red;
+    height: 15%;
+  }
+}
+
+.splashWrap {
+  hieght: 100vh;
+  position:absolute;
+}
+
+.snow {
+  position:fixed;
+  height:50px;
+  z-index: 4;
+}
+
+#welcome {
+  z-index: 8;
+  height: 650px;
+  width: 100vw;
+  position:fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #9cb1bf;
+  background-color: $foregroundBlue;
+  display: inline-block;
+  text-align: center;
+  font-size: 2em;
+}
+
+#denver1, #denver2, #denver3, #denver4, #denver5 {
+  width:1450px;
+  height:1000px;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  position:fixed;
+  z-index: 5;
+  background: url(../media/images/denver1.png) 5% no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  display: inline-block;
+}
+#denver2 {
+  z-index: 4;
+  background: url(../media/images/denver2.png) center 5% no-repeat;
+  background-size: 100%;
+}
+#denver3 {
+  z-index: 3;
+  background: url(../media/images/denver3.png) center 5% no-repeat;
+  background-size: 100%;
+}
+#denver4 {
+  z-index: 2;
+  background: url(../media/images/denver4.png) center 5% no-repeat;
+  background-size: 100%;
+}
+#denver5 {
+  z-index: 1;
+  background: url(../media/images/denver5.png) center 5% no-repeat;
+  background-size: 100%;
+}
+
+.subFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      padding-left: 0px;
+    }
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin:6px;
+
+      a {
+        font-size: 19px;
+        line-height: normal;
+      }
+    }
+  }
+
+  .scrollBtn {
+    cursor: pointer;
+    width: 40px;
+    height:65px;
+    background-image: url(../media/images/scrollArrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    margin-left:15px;
+  }
+
+}
+
+.flex {
+  display: flex;
 }

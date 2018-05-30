@@ -1,0 +1,86 @@
+
+@function multiple-box-shadow($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #{$white()}";
+
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px #{$white()}";
+  }
+
+  @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+
+.splashWrap {
+  .flakes1 {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animateFall 150s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 500px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: $shadows-small;
+    }
+  }
+
+  .flakes2 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animateFall 100s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 500px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+
+  .flakes3 {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animateFall 50s linear infinite;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 500px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+
+  @keyframes animateFall {
+    from {
+      transform: translateY(-2000px);
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
+}

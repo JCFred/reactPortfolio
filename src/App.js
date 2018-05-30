@@ -9,10 +9,12 @@ import {
 import Header from './components/headerComponent/header';
 import Footer from './components/footerComponent/footer';
 import HomePage from './components/pages/homePage';
-import ProjectsPage from './components/pages/projectsPage'
+import ProjectsPage from './components/pages/projectsPage';
+import SplashPage from './components/pages/splashPage';
 
 //includes
 import './Assests/css/default.min.css';
+import './components/pages/parallaxControl.js';
 
 class App extends Component {
   render() {
@@ -22,8 +24,11 @@ class App extends Component {
 
         <Header />
 
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/ProjectsPage' component={ProjectsPage} />
+        <SplashPage />
+        <div className="mainContent">
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/ProjectsPage' component={ProjectsPage} />
+        </div>
 
         <Footer />
       </div>
