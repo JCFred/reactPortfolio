@@ -21,7 +21,7 @@ class SubFooter extends Component {
                 </div>
               </li>
               <li>
-                <Link className="componentLink" to="/ProjectsPage">Projects</Link>
+                <Link className="componentLink" to="/Projects">Projects</Link>
               </li>
               <li>
                 <Link to="/">Contact</Link>
@@ -29,7 +29,7 @@ class SubFooter extends Component {
             </ul>
           </nav>
 
-          <div className="scrollBtn" onClick={scrollUp}> to top</div>
+          <div className="scrollUpBtn" onClick={scrollUp}> to top</div>
         </div>
       </footer>
 

@@ -9,7 +9,8 @@ class HomePage extends Component {
       <div className="componentBody container-fluid">
 
         <div className="componentHeader">
-          About page Title
+          <h1>Jordan Fred - Web Developer</h1>
+
         </div>
 
         <div className="componentMain">

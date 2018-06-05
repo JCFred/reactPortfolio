@@ -21,7 +21,7 @@ class Header extends Component {
               </div>
             </li>
             <li>
-              <Link className="componentLink" to="/ProjectsPage">Projects</Link>
+              <Link className="componentLink" to="/Projects">Projects</Link>
             </li>
             <li className="last">
               <Link to="/">Contact</Link>

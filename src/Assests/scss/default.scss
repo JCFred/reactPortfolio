@@ -53,12 +53,14 @@ header {
 }
 
 body {
-  height: 5600px;
+  height: 6750px;
 }
 
 .mainContent {
   z-index: 9;
-  height: 500px;
+  width:95vw;
+  height: 95vh;
+  min-height:600px;
   border: 1px solid $white;
   border-radius: 15px;
   background-color: #184169;
@@ -66,6 +68,8 @@ body {
   opacity: 0;
   left: 50%;
   transform: translateX(-50%);
+
+
 }
 
 .componentBody{
@@ -76,6 +80,11 @@ body {
   .componentHeader {
     border: 1px solid red;
     height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+
+    font-family: subspace;
   }
 
   .componentMain {
@@ -86,6 +95,7 @@ body {
   .componentFooter {
     border: 1px solid red;
     height: 15%;
+    padding: 15px;
   }
 }
 
@@ -100,9 +110,10 @@ body {
   z-index: 4;
 }
 
-#welcome {
+#movingBackground {
   z-index: 8;
-  height: 650px;
+  height:100vh;
+  min-height: 650px;
   width: 100vw;
   position:fixed;
   left: 50%;
@@ -110,10 +121,30 @@ body {
 
   color: #9cb1bf;
   background-color: $foregroundBlue;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   font-size: 2em;
 }
+
+.scrollDownBtn {
+  width: 75px;
+  height:75px;
+  z-index: 11;
+
+  background-image: url(../media/images/arrowDown.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  pointer-events: auto;
+
+  position:fixed;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
 
 #denver1, #denver2, #denver3, #denver4, #denver5 {
   width:1450px;
@@ -172,11 +203,11 @@ body {
     }
   }
 
-  .scrollBtn {
+  .scrollUpBtn {
     cursor: pointer;
     width: 40px;
     height:65px;
-    background-image: url(../media/images/scrollArrow.svg);
+    background-image: url(../media/images/scrollArrowUp.svg);
     background-size: contain;
     background-repeat: no-repeat;
     font-size: 15px;
@@ -186,6 +217,82 @@ body {
     margin-left:15px;
   }
 
+}
+
+.projectsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+
+}
+
+.projectsDisplay::-webkit-scrollbar {
+    width: 1em;
+}
+
+.projectsDisplay::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: $backgroundBlue;
+}
+
+.projectsDisplay::-webkit-scrollbar-thumb {
+  background-color: #6B899F;
+  outline: 1px solid slategrey;
+  border-radius: 15px;
+}
+
+.projectDiv {
+  margin: 20px;
+
+  border-radius: 15px;
+  height: 225px;
+  width: 200px;
+  background-color: #6B899F;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  cursor: pointer;
+    .projectImage {
+      width: 125px;
+      height: 125px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+    .techUsed {
+      border: 1px solid white;
+      margin: 5px;
+      width: 175px;
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .tech {
+        width: 35px;
+        height: 35px;
+        border: 1px solid red;
+
+
+      }
+
+      .js {
+        backgorund-image: url(/javascriptIcon.svg)
+        background-size: contain;
+
+      }
+    }
+    p{
+      margin: 5px;
+      font-size: 10px;
+      display: none;
+    }
+    &:hover {
+      height: 350px;
+      p{
+        display: block;
+      }
+    }
 }
 
 .flex {

@@ -16,9 +16,10 @@ class SplashPage extends Component {
         <div id="denver4"></div>
         <div id="denver5"></div>
 
-        <div id="welcome">
+        <div id="movingBackground">
           <h1 id="titleText">Front End Developer in Denver</h1>
         </div>
+        <div className="scrollDownBtn"></div>
 
       </div>
     );
