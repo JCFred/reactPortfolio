@@ -24,7 +24,7 @@ class Header extends Component {
               <Link className="componentLink" to="/Projects">Projects</Link>
             </li>
             <li className="last">
-              <Link to="/">Contact</Link>
+              <Link to="/Resume">Resume</Link>
             </li>
           </ul>
         </nav>

@@ -4,15 +4,12 @@ import {
 } from 'react-router-dom';
 
 
-class SubFooter extends Component {
+class SubHeader extends Component {
   render() {
     return (
-      <footer className="subFoot">
-        <div>
-          subFooter
-        </div>
+      <footer className="subHead">
+          <div className="flexBot">
 
-          <div className="flex">
           <nav>
             <ul>
               <li>
@@ -24,12 +21,13 @@ class SubFooter extends Component {
                 <Link className="componentLink" to="/Projects">Projects</Link>
               </li>
               <li>
-                <Link to="/">Contact</Link>
+                <Link to="/Resume">Resume</Link>
               </li>
             </ul>
           </nav>
 
           <div className="scrollUpBtn" onClick={scrollUp}> to top</div>
+
         </div>
       </footer>
 
@@ -46,4 +44,4 @@ function scrollUp() {
   });
 }
 
-export default SubFooter;
+export default SubHeader;

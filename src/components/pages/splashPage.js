@@ -18,8 +18,25 @@ class SplashPage extends Component {
 
         <div id="movingBackground">
           <h1 id="titleText">Front End Developer in Denver</h1>
+
+          <div className="personalLinks">
+
+            <a href="https://github.com/JCFred" className="icon github"></a>
+
+            <a href="https://www.linkedin.com/in/jcfred/" className="icon linkedIn"></a>
+
+            <a href="mailto:JCFred88@gmail.com" className="icon gmail"></a>
+
+          </div>
+
+
+          <div className="scrollDownBtn"></div>
+
         </div>
-        <div className="scrollDownBtn"></div>
+
+
+
+
 
       </div>
     );

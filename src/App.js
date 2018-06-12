@@ -10,6 +10,7 @@ import Header from './components/headerComponent/header';
 import Footer from './components/footerComponent/footer';
 import HomePage from './components/pages/homePage';
 import ProjectsPage from './components/pages/projectsPage';
+import ResumePage from './components/pages/resumePage';
 import SplashPage from './components/pages/splashPage';
 
 //includes
@@ -28,6 +29,7 @@ class App extends Component {
         <div className="mainContent">
           <Route exact path='/' component={HomePage} />
           <Route exact path='/Projects' component={ProjectsPage} />
+          <Route exact path='/Resume' component={ResumePage} />
         </div>
 
         <Footer />

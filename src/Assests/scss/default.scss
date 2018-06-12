@@ -1,5 +1,7 @@
 @import '_config.scss';
 @import 'stars.scss';
+@import 'icons.scss';
+
 
 header {
   position: fixed;
@@ -29,7 +31,6 @@ header {
     padding: 0;
   }
 
-
   nav {
     position: absolute;
     top: 50%; right: 15px;
@@ -53,23 +54,21 @@ header {
 }
 
 body {
-  height: 6750px;
+  height: 4000px;
 }
 
 .mainContent {
   z-index: 9;
   width:95vw;
-  height: 95vh;
-  min-height:600px;
-  border: 1px solid $white;
+  height: 97vh;
+  min-height: 700px;
+
+  border: 5px ridge $white;
   border-radius: 15px;
   background-color: #184169;
   position:fixed;
-  opacity: 0;
   left: 50%;
   transform: translateX(-50%);
-
-
 }
 
 .componentBody{
@@ -78,24 +77,102 @@ body {
 
 
   .componentHeader {
-    border: 1px solid red;
-    height: 10%;
+    height: 110;
     display: flex;
-    align-items: center;
-    padding-left: 15px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 15px;
+    h1{
+      font-family: subspace;
+      font-size: 2.25em;
+      color: $titleFont;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    a {
+      font-size: 1.2em;
+      font-family: 'Kanit', sans-serif;
+    }
+    ul {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 560px) {
+      .componentHeader {
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items: flex-start;
 
-    font-family: subspace;
+      }
   }
 
   .componentMain {
-    border: 1px solid red;
-    height:75%;
+    height:88%;
   }
 
   .componentFooter {
-    border: 1px solid red;
-    height: 15%;
-    padding: 15px;
+  }
+}
+
+.about {
+  display: flex;
+  height: 100%;
+
+  .aboutFiller {
+    min-width: 340px;;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+
+    .aboutPic {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-image: url(../media/images/JordanFred.jpg);
+      background-size: contain;
+    }
+  }
+  .aboutContent {
+    width: 70%;
+    height: 100%;
+    padding: 25px;
+    h2 {
+      font-family: 'Crimson Text', serif;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+    .about {
+      flex-direction:column;
+
+      .aboutFiller {
+        min-height: 280px;
+        max-height: 280px;
+        width: 100%;
+        padding-top: 15px;
+      }
+
+      .aboutContent {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        h2 {
+          font-size: 2em;
+        }
+      }
+    }
+}
+@media (max-width: 800px) {
+  .about {
+    .aboutContent {
+      h2 {
+        font-size: 1.2em;
+      }
+    }
   }
 }
 
@@ -129,20 +206,38 @@ body {
   font-size: 2em;
 }
 
+.personalLinks {
+  height: 65px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  background-position: center center;
+}
+
+.iconSmall {
+  height:35px;
+  width:35px;
+  margin-right: 3px;
+  background-size: contain;
+  background-position: center center;
+}
+
 .scrollDownBtn {
   width: 75px;
   height:75px;
-  z-index: 11;
-
+  z-index: 8;
   background-image: url(../media/images/arrowDown.png);
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
   pointer-events: auto;
-
-  position:fixed;
-  transform: translateX(-50%);
-  left: 50%;
 }
 
 
@@ -180,10 +275,10 @@ body {
   background-size: 100%;
 }
 
-.subFoot {
+.subHead {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 
   nav {
     display: flex;
@@ -222,9 +317,15 @@ body {
 .projectsDisplay {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  overflow-y: scroll;
+  justify-content: space-around;
+  height: 100%;
 
+}
+
+@media (max-width: 1100px) {
+    .projectsDisplay  {
+          overflow-y: scroll;
+    }
 }
 
 .projectsDisplay::-webkit-scrollbar {
@@ -233,7 +334,7 @@ body {
 
 .projectsDisplay::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      background-color: $backgroundBlue;
+      background-color: $white;
 }
 
 .projectsDisplay::-webkit-scrollbar-thumb {
@@ -243,58 +344,150 @@ body {
 }
 
 .projectDiv {
-  margin: 20px;
-
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
   border-radius: 15px;
-  height: 225px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   background-color: #6B899F;
+  color: #6B899F;
   display:flex;
   flex-direction:column;
   align-items: center;
   cursor: pointer;
-    .projectImage {
-      width: 125px;
-      height: 125px;
-      border: 1px solid white;
-      border-radius: 50%;
+  transition: all .25s;
+
+    h4 {
+      color: white;
     }
+    .projectImage {
+      min-width: 125px;
+      min-height: 125px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      transition: all .25s;
+    }
+
+    .portfolioImg {
+      background-image: url(../media/images/projectScreenshots/portfolioSite.png);
+      background-position: center top;
+      background-size: 276px 138px;
+    }
+    .pageSlayerImg {
+      background-image: url(../media/images/projectScreenshots/pageSlayer.png);
+      background-position: center center;
+      background-size: contain;
+    }
+    .galacticMismatchImg {
+      background-image: url(../media/images/projectScreenshots/galacticMismatch.png);
+      background-position: center center;
+      background-size: contain;
+    }
+    .pixelAidImg {
+      background-image: url(../media/images/projectScreenshots/pixelAid.png);
+      background-position: center center;
+      background-size: cover;
+    }
+    .mskorImg {
+      background-image: url(../media/images/projectScreenshots/mskorHomepage.png);
+      background-position: center center;
+      background-size: 150px 104px;
+    }
+    .pixelShareImg {
+      background-image: url(../media/images/projectScreenshots/pixelShare.png);
+      background-position: center center;
+      background-size: 200px 139px;
+    }
+
     .techUsed {
-      border: 1px solid white;
       margin: 5px;
       width: 175px;
-      height: 50px;
+      min-height: 50px;
       display: flex;
       justify-content: space-around;
       align-items: center;
 
       .tech {
+        margin-right: 3px;
+
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        p {
+          margin:0;
+          color: $mtShade;
+          text-align: center;
+        }
+
+      }
+
+      .techIcon {
         width: 35px;
         height: 35px;
-        border: 1px solid red;
-
-
-      }
-
-      .js {
-        backgorund-image: url(/javascriptIcon.svg)
         background-size: contain;
-
       }
+
     }
     p{
-      margin: 5px;
-      font-size: 10px;
-      display: none;
+      color: white;
+      margin-left: 8px;
+      margin-right: 8px;
+      font-size: 12px;
+      text-align: center;
     }
-    &:hover {
-      height: 350px;
-      p{
-        display: block;
+}
+
+.resumeDisplay {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .titleDiv {
+    height: 12%;
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    h2 {
+      margin-bottom: 3px;
+    }
+  }
+  .skillContainer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 20px;
+
+    .skillList {
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      ul {
+        list-style-type: none;
+        padding-left:0;
       }
     }
+  }
+  .expNedu {
+    border-top: 1px solid white;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+
+    section{
+      width: 50%;
+    }
+  }
+
 }
 
 .flex {
   display: flex;
+}
+.flexBot {
+  display:flex;
+  align-items: flex-end;
 }
