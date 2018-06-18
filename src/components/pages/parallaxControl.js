@@ -64,7 +64,7 @@ function checkScreen() {
   else if (screenWidth < 1700) {
     return 150;
   } else {
-    return 400;
+    return 150;
   }
 }
 
