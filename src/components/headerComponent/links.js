@@ -9,11 +9,11 @@ class HeaderLinks extends Component {
     return (
         <div className="flex">
 
-            <a className="iconSmall github"></a>
+            <a href="https://github.com/JCFred" className="iconSmall github"></a>
 
-            <a className="iconSmall linkedIn"></a>
+            <a href="https://www.linkedin.com/in/jcfred/" className="iconSmall linkedIn"></a>
 
-            <a className="iconSmall gmail"></a>
+            <a href="mailto:JCFred88@gmail.com" className="iconSmall gmail"></a>
 
         </div>
 

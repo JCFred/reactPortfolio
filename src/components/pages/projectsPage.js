@@ -49,7 +49,7 @@ class ProjectsPage extends Component {
 
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum erat. Aenean sit amet convallis enim.
+                This very website you are looking at right now. Single page application with custom parallax of Denver Skyline.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ class ProjectsPage extends Component {
 
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum erat. Aenean sit amet convallis enim.
+                Contracted site, built and managed for Magnusson-Skor an entrepreneur publishing company.
               </p>
             </div>
 
