@@ -24,7 +24,11 @@ class ProjectsPage extends Component {
             <div className="projectDiv">
 
               <h4>Portfolio Site</h4>
-              <div className="projectImage portfolioImg"></div>
+              <div className="linksNPic">
+                <a href="https://github.com/JCFred/reactPortfolio" className="iconSmall github"></a>
+                <div className="projectImage portfolioImg"></div>
+                <div className="iconSmall noHover"></div>
+              </div>
               <div className="techUsed">
 
                 <div className="tech">
@@ -56,7 +60,11 @@ class ProjectsPage extends Component {
             {/*MSKOR*/}
             <div className="projectDiv">
               <h4>Mskor.com</h4>
-              <div className="projectImage mskorImg"></div>
+              <div className="linksNPic">
+                <div className="iconSmall noHover"></div>
+                <div className="projectImage mskorImg"></div>
+                <a href="https://www.mskor.com/" className="iconSmall webLink"></a>
+              </div>
               <div className="techUsed">
 
                 <div className="tech">
@@ -85,39 +93,51 @@ class ProjectsPage extends Component {
             {/*PIXEL AID*/}
             <div className="projectDiv">
               <h4>PixelAid</h4>
-              <div className="projectImage pixelAidImg"></div>
+
+              <div className="linksNPic">
+                <a href="https://github.com/Pixelaid-Team/Pixelaid" className="iconSmall github"></a>
+                <div className="projectImage pixelAidImg"></div>
+                <a href="http://pixelaid.herokuapp.com/" className="iconSmall webLink"></a>
+              </div>
+
               <div className="techUsed">
 
-              <div className="tech">
-                <div className="techIcon bootstrap"></div>
-                <p>Bootstrap</p>
-              </div>
+                <div className="tech">
+                  <div className="techIcon bootstrap"></div>
+                  <p>Bootstrap</p>
+                </div>
 
-              <div className="tech">
-                <div className="techIcon postgresSql"></div>
-                <p>PostgreSQL</p>
-              </div>
+                <div className="tech">
+                  <div className="techIcon postgresSql"></div>
+                  <p>PostgreSQL</p>
+                </div>
 
-              <div className="tech">
-                <div className="techIcon nodeJs"></div>
-                <p>Node.JS</p>
-              </div>
+                <div className="tech">
+                  <div className="techIcon nodeJs"></div>
+                  <p>Node.JS</p>
+                </div>
 
-              <div className="tech">
-                <div className="techIcon js"></div>
-                <p>JavaScript</p>
-              </div>
+                <div className="tech">
+                  <div className="techIcon js"></div>
+                  <p>JavaScript</p>
+                </div>
 
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum erat. Aenean sit amet convallis enim.
+                Web Application that gamifies workplace recognition. Developed as part of a team of five.
               </p>
             </div>
 
           {/*PAGE SLAYER*/}
             <div className="projectDiv">
               <h4>Page Slayer</h4>
-              <div className="projectImage pageSlayerImg"></div>
+
+              <div className="linksNPic">
+                <a href="https://github.com/JCFred/Capstone_02" className="iconSmall github"></a>
+                <div className="projectImage pageSlayerImg"></div>
+                <a href="https://thepageslayer.firebaseapp.com/" className="iconSmall webLink"></a>
+              </div>
+
               <div className="techUsed">
 
               <div className="tech">
@@ -132,14 +152,20 @@ class ProjectsPage extends Component {
 
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum erat. Aenean sit amet convallis enim.
+                Learned new technologies and developed game in three weeks. Collaborated with freelance artist for animations.
               </p>
             </div>
 
             {/*PIXEL SHARE*/}
             <div className="projectDiv">
               <h4>Pixel Share</h4>
-              <div className="projectImage pixelShareImg"></div>
+
+              <div className="linksNPic">
+                <a href="https://github.com/JCFred/pixelQuilt" className="iconSmall github"></a>
+                <div className="projectImage pixelShareImg"></div>
+                <a href="http://pixelshare.herokuapp.com/" className="iconSmall webLink"></a>
+              </div>
+
               <div className="techUsed">
 
               <div className="tech">
@@ -164,14 +190,20 @@ class ProjectsPage extends Component {
 
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum erat. Aenean sit amet convallis enim.
+                Solo developed full stack pixel art sharing database with regular community contributions. Please feel free to add to the growing picture!
               </p>
             </div>
 
           {/*GALACTIC MISMATCH*/}
             <div className="projectDiv">
               <h4>Galactic Mismatch</h4>
-              <div className="projectImage galacticMismatchImg"></div>
+
+              <div className="linksNPic">
+                <a href="https://github.com/JCFred/match3_q1Project" className="iconSmall github"></a>
+                <div className="projectImage galacticMismatchImg"></div>
+                <a href="https://galacticmismatch.firebaseapp.com/" className="iconSmall webLink"></a>
+              </div>
+
               <div className="techUsed">
 
               <div className="tech">
@@ -191,7 +223,7 @@ class ProjectsPage extends Component {
 
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum erat. Aenean sit amet convallis enim.
+                Front end game run entirely through JavaScript and Jquery dom manipulation.
               </p>
             </div>
 

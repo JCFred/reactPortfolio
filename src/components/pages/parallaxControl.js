@@ -1,6 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', function(){
-  document.getElementById('movingBackground').style.top = '500px';
+
+  var screenDifference = checkScreen();
+  document.getElementById('movingBackground').style.top = (500  + screenDifference) + 'px';
   document.querySelector('.mainContent').style.top = '1000px';
 
   document.getElementById('parent-list').addEventListener('click', function() {
@@ -27,6 +29,7 @@ function parallaxDenver () {
   var contentTop = document.querySelector('.mainContent').style.top;
   contentTop = contentTop.slice(0, (contentTop.length -2));
   contentTop = parseInt(contentTop);
+  var screenDifference = checkScreen();
 
   //console.log(typeof contentTop);
 
@@ -36,10 +39,9 @@ function parallaxDenver () {
   // } else {
   //   document.querySelector('.mainContent').style.top = 25;
   // }
-  document.querySelector('.mainContent').style.top = ((-scrollTop * .3) +1000) + 'px';
+  document.querySelector('.mainContent').style.top = ((-scrollTop * .3) + 1000) + 'px';
 
-  document.getElementById('movingBackground').style.top = ((-scrollTop * .08) + 480) + 'px';
-  document.querySelector('.scrollDownBtn').style.top = ((-scrollTop * .08) + 560) + 'px';
+  document.getElementById('movingBackground').style.top = ((-scrollTop * .08) + (480  + screenDifference)) + 'px';
 
   document.getElementById('denver1').style.top = -scrollTop * .08 + 'px';
   document.getElementById('denver2').style.top = -scrollTop * .06 + 'px';
@@ -49,6 +51,22 @@ function parallaxDenver () {
 
 }
 
+function checkScreen() {
+  var screenWidth = window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+
+  console.log(screenWidth);
+
+  if(screenWidth < 1300) {
+    return 0;
+  }
+  else if (screenWidth < 1700) {
+    return 150;
+  } else {
+    return 400;
+  }
+}
 
 function headerFade(scroll){
   if(scroll > 4500){
