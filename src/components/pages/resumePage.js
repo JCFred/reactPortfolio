@@ -81,7 +81,7 @@ class ResumePage extends Component {
 
           <div className="expNedu">
             <section>
-              <div>
+              <div className="exp">
                 <h4><b><u>Galvanize, Denver - 2017</u></b></h4>
                 <h4>Full Stack Web Development Immersive</h4>
               </div>
@@ -93,7 +93,7 @@ class ResumePage extends Component {
             </section>
 
             <section>
-              <div>
+              <div className="exp">
                 <h4><b><u>Schwab Charitable - 2015-2016</u></b></h4>
                 <h4>Managed clients charitable donations and tax forms as a grant specialist.</h4>
               </div>

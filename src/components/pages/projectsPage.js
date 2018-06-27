@@ -25,7 +25,7 @@ class ProjectsPage extends Component {
 
               <h4>Portfolio Site</h4>
               <div className="linksNPic">
-                <a href="https://github.com/JCFred/reactPortfolio" className="iconSmall github"></a>
+                <a href="https://github.com/JCFred/reactPortfolio" className="iconSmall githubWhite"></a>
                 <div className="projectImage portfolioImg"></div>
                 <div className="iconSmall noHover"></div>
               </div>
@@ -63,7 +63,7 @@ class ProjectsPage extends Component {
               <div className="linksNPic">
                 <div className="iconSmall noHover"></div>
                 <div className="projectImage mskorImg"></div>
-                <a href="https://www.mskor.com/" className="iconSmall webLink"></a>
+                <a href="https://www.mskor.com/" className="iconSmall webLinkWhite"></a>
               </div>
               <div className="techUsed">
 
@@ -95,9 +95,9 @@ class ProjectsPage extends Component {
               <h4>PixelAid</h4>
 
               <div className="linksNPic">
-                <a href="https://github.com/Pixelaid-Team/Pixelaid" className="iconSmall github"></a>
+                <a href="https://github.com/Pixelaid-Team/Pixelaid" className="iconSmall githubWhite"></a>
                 <div className="projectImage pixelAidImg"></div>
-                <a href="http://pixelaid.herokuapp.com/" className="iconSmall webLink"></a>
+                <a href="http://pixelaid.herokuapp.com/" className="iconSmall webLinkWhite"></a>
               </div>
 
               <div className="techUsed">
@@ -133,9 +133,9 @@ class ProjectsPage extends Component {
               <h4>Page Slayer</h4>
 
               <div className="linksNPic">
-                <a href="https://github.com/JCFred/Capstone_02" className="iconSmall github"></a>
+                <a href="https://github.com/JCFred/Capstone_02" className="iconSmall githubWhite"></a>
                 <div className="projectImage pageSlayerImg"></div>
-                <a href="https://thepageslayer.firebaseapp.com/" className="iconSmall webLink"></a>
+                <a href="https://thepageslayer.firebaseapp.com/" className="iconSmall webLinkWhite"></a>
               </div>
 
               <div className="techUsed">
@@ -161,9 +161,9 @@ class ProjectsPage extends Component {
               <h4>Pixel Share</h4>
 
               <div className="linksNPic">
-                <a href="https://github.com/JCFred/pixelQuilt" className="iconSmall github"></a>
+                <a href="https://github.com/JCFred/pixelQuilt" className="iconSmall githubWhite"></a>
                 <div className="projectImage pixelShareImg"></div>
-                <a href="http://pixelshare.herokuapp.com/" className="iconSmall webLink"></a>
+                <a href="http://pixelshare.herokuapp.com/" className="iconSmall webLinkWhite"></a>
               </div>
 
               <div className="techUsed">
@@ -199,9 +199,9 @@ class ProjectsPage extends Component {
               <h4>Galactic Mismatch</h4>
 
               <div className="linksNPic">
-                <a href="https://github.com/JCFred/match3_q1Project" className="iconSmall github"></a>
+                <a href="https://github.com/JCFred/match3_q1Project" className="iconSmall githubWhite"></a>
                 <div className="projectImage galacticMismatchImg"></div>
-                <a href="https://galacticmismatch.firebaseapp.com/" className="iconSmall webLink"></a>
+                <a href="https://galacticmismatch.firebaseapp.com/" className="iconSmall webLinkWhite"></a>
               </div>
 
               <div className="techUsed">

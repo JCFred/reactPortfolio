@@ -33,6 +33,13 @@ class HomePage extends Component {
                 <h2>
                 I am a full stack web developer interested in both front and back end positions. I enjoy collaborating on projects and am a natural leader. I am passionate about innovative and unique applications, and enjoy creating my own in my free time. I enjoy mountain biking, hiking, and camping.
                 </h2>
+
+                <div className="aboutIcons">
+                  <div className="graduate"></div>
+                  <div className="globalTravel"></div>
+                  <div className="developer"></div>
+                </div>
+
                 <h2>
                 I am a full stack web developer interested in both front and back end positions. I enjoy collaborating on projects and am a natural leader. I am passionate about innovative and unique applications, and enjoy creating my own in my free time. I enjoy mountain biking, hiking, and camping.
                 </h2>

@@ -56,14 +56,23 @@ function checkScreen() {
   || document.documentElement.clientWidth
   || document.body.clientWidth;
 
-  console.log(screenWidth);
+  var screenHeight = window.innerHeight
+  || document.documentElement.clientHeight
+  || document.body.clientHeight;
+
+
+  console.log(screenHeight);
 
   if(screenWidth < 1300) {
     return 0;
   }
-  else if (screenWidth < 1700) {
-    return 150;
-  } else {
+  else if (screenWidth > 1300 && screenHeight < 740) {
+    return 0;
+  }
+  else if (screenWidth > 1700 && screenHeight > 740) {
+    return 100;
+  }
+  else if (screenWidth > 1700 && screenHeight > 740) {
     return 150;
   }
 }
