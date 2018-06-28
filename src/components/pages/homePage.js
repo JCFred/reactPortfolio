@@ -31,9 +31,9 @@ class HomePage extends Component {
 
               <section className="aboutContent">
                 <h2>
-                My name is Jordan Fred and I am a front end devloper in the beautiful city of Denver, Colorado.
-                I enjoy collaborating on projects and making valuable contributions towards amazing applications.
-                I have professional experience, am trained in web developerment, and hold two college dergrees in Philosophy and Cumminications.
+                My name is Jordan Fred and I am a front end developer in the beautiful city of Denver, Colorado.
+                I enjoy collaborating on projects and making valuable contributions toward amazing applications.
+                I have professional experience, am trained in web development, and hold two college degrees in Philosophy and Communications.
                 </h2>
 
                 <div className="aboutIcons">
@@ -45,7 +45,7 @@ class HomePage extends Component {
                 <h2>
                 Passionate about writting and public speaking, I love to teach others about abstract concepts through everyday language.
                 As an avid puzzler I seek out new challanges that require logical solutions.
-                Although a Colorado native, I frequiently travel to meet new people and gain a more diverse perspective. 
+                Although a Colorado native, I frequiently travel to meet new people and gain a more diverse perspective.
                 </h2>
               </section>
           </div>
