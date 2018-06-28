@@ -83,7 +83,7 @@ class ResumePage extends Component {
             <section>
               <div className="exp">
                 <h4><b><u>Galvanize, Denver - 2017</u></b></h4>
-                <h4>Full Stack Web Development Immersive</h4>
+                <h4>Full Stack Web Development. Javascript focused 6 month immersive course.</h4>
               </div>
 
               <div>
@@ -95,12 +95,12 @@ class ResumePage extends Component {
             <section>
               <div className="exp">
                 <h4><b><u>Schwab Charitable - 2015-2016</u></b></h4>
-                <h4>Managed clients charitable donations and tax forms as a grant specialist.</h4>
+                <h4>Grant Specialist. Managed clients charitable donations and due diligence of tax qualification of nonprofit orginizations.</h4>
               </div>
 
               <div>
                 <h4><b><u>The Breakaway Group - 2010-2012</u></b></h4>
-                <h4>Responsible for production and quality assurance of educational applications for medical technologies.</h4>
+                <h4>Multi-Media Developer. Responsible for front end production, graphic design, and quality assurance of educational applications for medical technologies.</h4>
               </div>
             </section>
 
