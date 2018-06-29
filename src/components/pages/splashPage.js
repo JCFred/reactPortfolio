@@ -17,7 +17,7 @@ class SplashPage extends Component {
         <div id="denver5"></div>
 
         <div id="movingBackground">
-          <h1 id="titleText">Front End Developer in Denver</h1>
+          <h1 id="titleText">Full Stack Developer in Denver</h1>
 
           <div className="personalLinks">
 

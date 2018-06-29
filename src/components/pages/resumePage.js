@@ -95,7 +95,7 @@ class ResumePage extends Component {
             <section>
               <div className="exp">
                 <h4><b><u>Schwab Charitable - 2015-2016</u></b></h4>
-                <h4>Grant Specialist. Managed clients charitable donations and due diligence of tax qualification of nonprofit orginizations.</h4>
+                <h4>Grant Specialist. Managed clients charitable donations and due diligence of tax qualification of nonprofit organizations.</h4>
               </div>
 
               <div>
