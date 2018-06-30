@@ -82,14 +82,20 @@ class ResumePage extends Component {
           <div className="expNedu">
             <section>
               <div className="exp">
-                <h4><b><u>Galvanize, Denver - 2017</u></b></h4>
+                <h4><b><u>Galvanize, Denver 2017</u></b></h4>
                 <h4>Full Stack Web Development. Javascript focused 6 month immersive course.</h4>
               </div>
 
               <div>
-                <h4><b><u>Colorado State University - 2015</u></b></h4>
+                <h4><b><u>Colorado State University - 2012-2015</u></b></h4>
                 <h4>Bachelor of Arts in Both Philosophy and Commuications</h4>
               </div>
+
+              <div>
+                <h4><b><u>Cultural Study Mission - 2016</u></b></h4>
+                <h4>Solo backpacked across Southeast Asia</h4>
+              </div>
+
             </section>
 
             <section>
@@ -102,14 +108,15 @@ class ResumePage extends Component {
                 <h4><b><u>The Breakaway Group - 2010-2012</u></b></h4>
                 <h4>Multi-Media Developer. Responsible for front end production, graphic design, and quality assurance of educational applications for medical technologies.</h4>
               </div>
+
+              <div>
+                <h4><b><u>Golden Grove Design LLC - 2017-present</u></b></h4>
+                <h4>Design, develop, and maintain sites on contract bases.</h4>
+              </div>
             </section>
 
           </div>
-
-
         </div>
-
-
       </div>
     );
   }
